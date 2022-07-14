@@ -35,3 +35,17 @@ Route::get('/golongan/{id}/edit', [App\Http\Controllers\GolonganController::clas
 Route::patch('/golongan/{id}', [App\Http\Controllers\GolonganController::class, 'update']);
 Route::delete('/golongan/{id}', [App\Http\Controllers\GolonganController::class, 'destroy']);
 
+Route::get('/barangmasuk', [App\Http\Controllers\BarangmasukController::class, 'index']);
+Route::get('/barangmasuk/create', [App\Http\Controllers\BarangmasukController::class, 'create']);
+Route::post('/barangmasuk', [App\Http\Controllers\BarangmasukController::class, 'store']);
+Route::get('/barangmasuk/{id}/edit', [App\Http\Controllers\BarangmasukController::class, 'edit']);
+Route::patch('/barangmasuk/{id}', [App\Http\Controllers\BarangmasukController::class, 'update']);
+Route::delete('/barangmasuk/{id}', [App\Http\Controllers\BarangmasukController::class, 'destroy']);
+
+Route::get('/barangkeluar', [App\Http\Controllers\BarangkeluarController::class, 'index']);
+Route::get('/barangkeluar/create', [App\Http\Controllers\BarangkeluarController::class, 'create']);
+Route::post('/barangkeluar', [App\Http\Controllers\BarangkeluarController::class, 'store']);
+Route::get('/barangkeluar/{id}/edit', [App\Http\Controllers\BarangkeluarController::class, 'edit']);
+Route::patch('/barangkeluar/{id}', [App\Http\Controllers\BarangkeluarController::class, 'update']);
+Route::delete('/barangkeluar/{id}', [App\Http\Controllers\BarangkeluarController::class, 'destroy']);
+

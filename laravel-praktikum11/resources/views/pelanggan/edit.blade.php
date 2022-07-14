@@ -8,12 +8,12 @@
         @method('PATCH') 
         @csrf
         <div class="mb-3">
-            <label>No. Pelanggan</label>
+            <label>No.</label>
             <input type="text" class="form-control" name="pel_no" value="{{ $row->pel_no }}">
         </div>
 
         <div class="mb-3">
-            <label>Id User</label>
+            <label>Id Barang</label>
             <input type="text" class="form-control" name="pel_id_user" value="{{ $row->pel_id_user }}">
         </div>
 
@@ -23,34 +23,25 @@
         </div>
 
         <div class="mb-3">
-            <label>Alamat</label>
+            <label>Jenis</label>
             <textarea class="form-control" name="pel_alamat" value="{{ $row->pel_alamat }}"></textarea>
         </div>
 
         <div class="mb-3">
-            <label>No. HP</label>
+            <label>Jumlah</label>
             <input type="text" class="form-control" name="pel_hp" value="{{ $row->pel_hp }}">
         </div>
 
         <div class="mb-3">
-            <label>KTP</label>
+            <label>Harga</label>
             <input type="text" class="form-control" name="pel_ktp" value="{{ $row->pel_ktp }}">
         </div>
 
         <div class="mb-3">
-            <label>Seri</label>
+            <label>Pemasok</label>
             <input type="text" class="form-control" name="pel_seri" value="{{ $row->pel_seri }}">
         </div>
 
-        <div class="mb-3">
-            <label>Meteran</label>
-            <input type="text" class="form-control" name="pel_meteran" value="{{ $row->pel_meteran }}">
-        </div>
-
-        <div class="mb-3">
-            <label>Aktif</label>
-            <input type="text" class="form-control" name="pel_aktif" value="{{ $row->pel_aktif }}">
-        </div>
 
         <div class="mb-3">
             <input type="submit" value="UPDATE">

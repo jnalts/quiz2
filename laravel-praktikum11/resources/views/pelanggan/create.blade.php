@@ -2,17 +2,17 @@
 @section('content')
 
 <div class="container">
-    <h3>Tambah Data Pelanggan</h3>
+    <h3>Tambah Data Barang</h3>
 
     <form action="{{ url('/pelanggan') }}" method="POST">
         @csrf 
         <div class="mb-3">
-            <label>No. Pelanggan</label>
+            <label>No.</label>
             <input type="text" class="form-control" name="pel_no">
         </div>
 
         <div class="mb-3">
-            <label>Id User</label>
+            <label>Id Barang</label>
             <input type="text" class="form-control" name="pel_id_user">
         </div>
 
@@ -22,33 +22,23 @@
         </div>
 
         <div class="mb-3">
-            <label>Alamat</label>
+            <label>Jenis</label>
             <textarea class="form-control" name="pel_alamat"></textarea>
         </div>
 
         <div class="mb-3">
-            <label>No. HP</label>
+            <label>Jumlah</label>
             <input type="text" class="form-control" name="pel_hp">
         </div>
 
         <div class="mb-3">
-            <label>KTP</label>
+            <label>Harga</label>
             <input type="text" class="form-control" name="pel_ktp">
         </div>
 
         <div class="mb-3">
-            <label>Seri</label>
+            <label>Pemasok</label>
             <input type="text" class="form-control" name="pel_seri">
-        </div>
-
-        <div class="mb-3">
-            <label>Meteran</label>
-            <input type="text" class="form-control" name="pel_meteran">
-        </div>
-
-        <div class="mb-3">
-            <label>Aktif</label>
-            <input type="text" class="form-control" name="pel_aktif">
         </div>
 
         <div class="mb-3">

@@ -5,7 +5,7 @@
     <h1>TOKO SABIRIN</h1>
     <h3>Data Barang Masuk</h3>
     
-    <a class="btn btn-primary btn-sm float-end" href="{{ url('pelanggan/create') }}">Tambah Data</a>
+    <a class="btn btn-primary btn-sm float-end" href="{{ url('barangmasuk/create') }}">Tambah Data</a>
     <table class="table table-bordered">
         <tr>
             <td>No.</td>
@@ -21,13 +21,13 @@
         </tr>
         @foreach($rows as $row)
         <tr>
-            <td>{{ $row->pel_id }}</td>
-            <td>{{ $row->pel_no }}</td>
-            <td>{{ $row->pel_id_user }}</td>
-            <td>{{ $row->pel_nama }}</td>
-            <td>{{ $row->pel_alamat }}</td>
-            <td>{{ $row->pel_hp }}</td>
-            <td>{{ $row->pel_ktp }}</td>
+            <td>{{ $row->masuk_id }}</td>
+            <td>{{ $row->masuk_no }}</td>
+            <td>{{ $row->masuk_id }}</td>
+            <td>{{ $row->masuk_nama }}</td>
+            <td>{{ $row->masuk_jenis }}</td>
+            <td>{{ $row->masuk_jlh }}</td>
+            <td>{{ $row->masuk_pemasok }}</td>
             <td>{{ $row->created_at }}</td>
             <td><a class="btn btn-primary btn-sm float-end" href="{{ url('pelanggan/'.$row->pel_id.'/edit') }}">EDIT</a></td>
             <td>

@@ -58,8 +58,8 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ url('pelanggan') }}">Pelanggan</a>
-                                    <a class="dropdown-item" href="{{ url('golongan') }}">Golongan</a>
+                                    <a class="dropdown-item" href="{{ url('pelanggan') }}">Barang Masuk</a>
+                                    <a class="dropdown-item" href="{{ url('golongan') }}">Barang Keluar</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

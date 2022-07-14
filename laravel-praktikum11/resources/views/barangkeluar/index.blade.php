@@ -3,9 +3,9 @@
 
 <div class="container">
     <h1>TOKO SABIRIN</h1>
-    <h3>Data Barang Masuk</h3>
+    <h3>Data Barang Keluar</h3>
     
-    <a class="btn btn-primary btn-sm float-end" href="{{ url('pelanggan/create') }}">Tambah Data</a>
+    <a class="btn btn-primary btn-sm float-end" href="{{ url('barangkeluar/create') }}">Tambah Data</a>
     <table class="table table-bordered">
         <tr>
             <td>No.</td>
@@ -14,20 +14,20 @@
             <td>Nama</td>
             <td>Jenis</td>
             <td>Jumlah</td>
-            <td>Pemasok</td>
+            <td>Pembeli</td>
             <td>Created</td>
             <td>EDIT</td>
             <td>HAPUS</td>
         </tr>
         @foreach($rows as $row)
         <tr>
-            <td>{{ $row->pel_id }}</td>
-            <td>{{ $row->pel_no }}</td>
-            <td>{{ $row->pel_id_user }}</td>
-            <td>{{ $row->pel_nama }}</td>
-            <td>{{ $row->pel_alamat }}</td>
-            <td>{{ $row->pel_hp }}</td>
-            <td>{{ $row->pel_ktp }}</td>
+            <td>{{ $row->keluar_id }}</td>
+            <td>{{ $row->keluar_no }}</td>
+            <td>{{ $row->keluar_id }}</td>
+            <td>{{ $row->keluar_nama }}</td>
+            <td>{{ $row->keluar_jenis }}</td>
+            <td>{{ $row->keluar_jlh }}</td>
+            <td>{{ $row->keluar_pemasok }}</td>
             <td>{{ $row->created_at }}</td>
             <td><a class="btn btn-primary btn-sm float-end" href="{{ url('pelanggan/'.$row->pel_id.'/edit') }}">EDIT</a></td>
             <td>
